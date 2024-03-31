@@ -25,9 +25,9 @@ const App = () => {
   return (
     <div>
         <h1>My todos</h1>
-      <button onClick={handleAddTodo}>Add todo</button>
-      <button onClick={handleIncrement}>Increment</button>
-      <input type="text" placeholder="Enter task" onBlur={handleCustomTask} />
+      <button id="add-todo-btn" onClick={handleAddTodo}>Add todo</button>
+      <button id='incr-cnt' onClick={handleIncrement}>Increment</button>
+      <input id='skill-input' type="text" placeholder="Enter task" onBlur={handleCustomTask} />
       <UseMemo todos={todos} />
       <ReactMemo counter={counter} />
     </div>
